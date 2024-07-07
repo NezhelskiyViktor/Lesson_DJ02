@@ -38,13 +38,14 @@ main {
     text-align: center;
     overflow: auto;
 }
-main .underline {
-    text-decoration: underline;
+#underline {
     font-style: italic;
+    border-bottom: 2px solid #000;
 }
 main .list {
     text-align: left;
-    margin-left: 20px;
+    margin: auto;
+    width: 90%
 }
 
 footer {

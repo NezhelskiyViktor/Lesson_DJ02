@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'BadScript';
+    src: url('../fonts/BadScript-Regular.ttf') format('truetype');
+}
 aside {
     float: left;
     width: 20%;
@@ -39,7 +43,7 @@ main {
     overflow: auto;
 }
 #underline {
-    font-style: italic;
+    font-family: 'BadScript', cursive;
     border-bottom: 2px solid #000;
 }
 main .list {

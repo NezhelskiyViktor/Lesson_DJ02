@@ -1,16 +1,9 @@
-.page {
-    padding-left: 1.5%;
-}
-.underline {
-    text-decoration: underline;
-    font-style: italic;
-}
 aside {
     float: left;
     width: 20%;
     padding: 1.5%;
     height: 100vh;
-    background-color: #D3FEE3;
+    background: linear-gradient(to bottom, #D3FEE3, white);
 }
 aside img {
     width: 40px;
@@ -41,10 +34,13 @@ aside ul li:hover, aside ul a:hover {
     text-decoration: none;
     transform: scale(1.15);
 }
-main .features {
-    margin: 0 auto;
-    margin-top: 0px;
+main {
     text-align: center;
+    overflow: auto;
+}
+main .underline {
+    text-decoration: underline;
+    font-style: italic;
 }
 main .list {
     text-align: left;
@@ -52,7 +48,6 @@ main .list {
 }
 
 footer {
-    position: absolute;
     width: 20%;
     padding: 2.5%;
     height: 80vh;

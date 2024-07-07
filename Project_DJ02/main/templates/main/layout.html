@@ -1,9 +1,10 @@
 {% load static %}
-<!--<!DOCTYPE html>-->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <title>Lesson DJ02</title>
@@ -11,18 +12,14 @@
 <body>
     <aside>
         <img src="{% static 'main/img/Logo.png' %}" alt="Логотип" width="50px">
-        <span class="logo">Урок по Django DJ02</span>
-        <hr>
+        {% include 'main/top.html' %}
         {% include 'main/nav.html' %}
-        <hr>
         {% include 'main/footer.html' %}
     </aside>
-    <main class="page">
-        <div class="features">
-            <h3 class="underline">Презентация Виктора Андреевича Нежельского</h3>
-            {% block content %}
-            {% endblock %}
-        </div>
+    <main>
+        <h3 class="underline">Презентация Виктора Андреевича Нежельского</h3>
+        {% block content %}
+        {% endblock %}
     </main>
 </body>
 </html>
